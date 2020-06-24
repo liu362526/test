@@ -18,6 +18,7 @@ import javax.validation.constraints.NotBlank;
 @Table(appliesTo = "t_message_sender",comment = "消息发送者")
 @EntityListeners(AuditingEntityListener.class)
 public class MessageSender extends BaseEntity {
+	private Long id;
     @Column(name="name",columnDefinition = "VARCHAR(64) COMMENT '名称'")
     @NotBlank(message = "名称并能为空")
     private String name;

@@ -22,17 +22,11 @@ import java.util.List;
 @EntityListeners(AuditingEntityListener.class)
 public class Category extends BaseEntity {
 	@Column(columnDefinition = "BIGINT COMMENT ''")
-    private String id;
+    private Long id;
     @Column(columnDefinition = "VARCHAR(16) COMMENT '名称'")
     private String name;
     @Column(columnDefinition = "VARCHAR(32) COMMENT '链接地址'")
     private String url;
-    public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getName() {
 		return name;
 	}

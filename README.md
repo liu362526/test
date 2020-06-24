@@ -106,7 +106,7 @@ _商品素材取自小米商城_
 - 导入idea或者eclipse
 - 确保开发工具下载并安装了lombok插件，另外由于lombok有版本差异，如果出现问题，可以更新maven以来中lombok的版本来解决
 - 创建数据库：linjiashop
-     ```sql
+     ```sql 
     CREATE DATABASE IF NOT EXISTS linjiashop DEFAULT CHARSET utf8 COLLATE utf8_general_ci; 
     CREATE USER 'linjiashop'@'%' IDENTIFIED BY 'linjiashop191028';
     GRANT ALL privileges ON linjiashop.* TO 'linjiashop'@'%';

@@ -32,14 +32,8 @@ public class Banner extends BaseEntity {
     private String param;
     @Column(columnDefinition = "BIGINT COMMENT ''")
 	@NotNull(message = "id不能为空")
-    private String id;
-    
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+    private Long id;
+   
 	public String getUrl() {
 		return url;
 	}
